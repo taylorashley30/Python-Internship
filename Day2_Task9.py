@@ -1,0 +1,7 @@
+l1 = (10, 20, 30, "Akash", 40, 50, "Technolabs", 60)
+print(l1)
+print (l1[2])
+print(l1[0:3])
+print (l1 [5:])
+print (l1[:3])
+print(type(l1))
