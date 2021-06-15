@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!--TASK 1 AND 2-->
+
+<html>
+<body>
+    <form method="post" action='formprocess'>
+    {% csrf_token %}
+    <p>First Name: <input name="Fname"type="text"></p>
+    
+    <p>Middle Name: <input name="Mname"type="text"></p>
+
+    <p>Last Name: <input name="Lname"type="text"></p>
+
+    <p>Phone Number: <input number="Pnumber" name="Pnumber" type="number"></p>
+
+    <p>Email: <input id="Email" name="Email" type="email" required /></p>
+	
+	<p>Password: <input id="password" name="Password" type="password" required /></p>
+
+	<p><button>Submit</button></p>
+
+    </form>
+</body>
+</html>
+{% endblock %}
